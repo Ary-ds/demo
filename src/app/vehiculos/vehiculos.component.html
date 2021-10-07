@@ -1,0 +1,34 @@
+<p>{{ lista }}</p>
+
+<h4 *ngFor="let pais of paises">{{pais.id}}</h4>
+
+<div class="container">
+
+<button class="btn btn-info" type="submit" [routerLink] = "['/vehiculos/form']">Nuevo Pais</button>
+
+<br><br><br>
+
+<select class="form-select" aria-label="Default select example">
+    <option selected>Lista de paises</option>
+    <option value="" *ngFor="let pais of paises"> {{pais.nombre}}</option>
+  </select>
+
+  <br><br> <br><br>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">NOMBRE</th>
+        <th scope="col">CONTINENTE</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pais of paises">
+        <th scope="row">{{pais.id}}</th>
+        <td>{{pais.nombre}}</td>
+        <td>{{pais.continente}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

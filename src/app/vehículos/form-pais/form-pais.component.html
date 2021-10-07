@@ -1,0 +1,29 @@
+<div class="container">
+   
+ <div class="card-body">
+     <h5 class="card-title">{{titulo}}</h5>
+     <form action="">
+         <!-- <div class="form-group row">
+             <label for="id" class="col-form-label col-sm-3">ID</label>
+             <div class="col-sm-6">                                   <!-- usamos expresiones propias de angular para mapear hasta nuestro objecto 
+                 <input type="text" class="form-contrl" name="id" [(ngModel)] = "pais.id">
+             </div>
+         </div> -->
+         <div class="form-group row">
+             <label for="nombre" class="col-form-label col-sm-3">NOMBRE</label>
+             <div class="col-sm-6">                                   <!-- usamos expresiones propias de angular para mapear hasta nuestro objecto -->
+                 <input type="text" class="form-contrl" name="nombre" [(ngModel)] = "pais.nombre">
+             </div>
+         </div>
+         <div class="form-group row">
+             <label for="continente" class="col-form-label col-sm-3">CONTINENTE</label>
+             <div class="col-sm-6">                                   <!-- usamos expresiones propias de angular para mapear hasta nuestro objecto -->
+                 <input type="text" class="form-contrl" name="continente" [(ngModel)] = "pais.continente">
+             </div>
+         </div>
+                                         <!-- cuando hago click al boton me lleva al metodo create que esta en app.component   -->             
+         <button class="btn btn-success" role="button" (click)='create()' >Registrar</button>
+     </form>
+ </div>
+
+</div>
